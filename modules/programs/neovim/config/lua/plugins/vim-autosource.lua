@@ -1,0 +1,1 @@
+return { "jenterkin/vim-autosource" }

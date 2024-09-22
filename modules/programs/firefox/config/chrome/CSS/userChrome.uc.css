@@ -1,0 +1,43 @@
+#TabsToolbar {
+    #alltabs-button,
+    #new-tab-button {
+        display: none;
+    }
+
+    .titlebar-spacer[type="post-tabs"] {
+        display: none;
+    }
+
+    #tabbrowser-tabs {
+        min-width: 500px;
+    }
+
+    #scrollbutton-up, #scrollbutton-down {
+        display: none;
+    }
+}
+
+#TabsToolbar-customization-target {
+    display: none;
+}
+
+#urlbar-container {
+    #urlbar-search-button,
+    #tracking-protection-icon-container {
+        display: none;
+    }
+
+    #star-button-box {
+        display: none;
+    }
+}
+
+/* `disply: none` breaks firefox */
+#nav-bar {
+    height: 0px;
+    min-height: 0px;
+
+    * {
+        height: 0px;
+    }
+}
