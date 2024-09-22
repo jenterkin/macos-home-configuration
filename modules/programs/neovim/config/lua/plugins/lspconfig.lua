@@ -1,4 +1,4 @@
-{
+return {
   "neovim/nvim-lspconfig",
   config = function()
     vim.api.nvim_buf_set_option(0, "omnifunc", "v:lua.vim.lsp.omnifunc")
@@ -6,7 +6,7 @@
     -- set up global lsp integrations
     vim.g.capabilities = vim.lsp.protocol.make_client_capabilities()
     vim.g.capabilities.textDocument.completion.completionItem = {
-      snippetSupport = true
+      snippetSupport = true,
       resolveSupport = {
         properties = {
           'documentation',

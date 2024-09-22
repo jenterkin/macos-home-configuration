@@ -1,3 +1,4 @@
+vim.g.mapleader = ','   -- leader must be set before lazy is loaded
 require("lazy.mod")
 
 local b = vim.bo        -- buffer
@@ -24,7 +25,6 @@ augroup END
 ]]
 
 vim.opt.timeoutlen = 0
-vim.g.mapleader = ','
 
 vim.api.nvim_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', {noremap = true})
 
